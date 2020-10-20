@@ -13,10 +13,11 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_1f6deb4b from 'nuxt_plugin_workbox_1f6deb4b' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_nuxticons_4eb750b9 from 'nuxt_plugin_nuxticons_4eb750b9' // Source: .\\nuxt-icons.js (mode: 'all')
 import nuxt_plugin_pluginrouting_b6e2342c from 'nuxt_plugin_pluginrouting_b6e2342c' // Source: .\\nuxt-i18n\\plugin.routing.js (mode: 'all')
 import nuxt_plugin_pluginmain_4363ddc5 from 'nuxt_plugin_pluginmain_4363ddc5' // Source: .\\nuxt-i18n\\plugin.main.js (mode: 'all')
+import nuxt_plugin_workbox_1f6deb4b from 'nuxt_plugin_workbox_1f6deb4b' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_meta_b761af7c from 'nuxt_plugin_meta_b761af7c' // Source: .\\pwa\\meta.js (mode: 'all')
+import nuxt_plugin_icons_56dbafa6 from 'nuxt_plugin_icons_56dbafa6' // Source: .\\pwa\\icons.js (mode: 'all')
 import nuxt_plugin_dashboardplugin_111ada96 from 'nuxt_plugin_dashboardplugin_111ada96' // Source: ..\\plugins\\dashboard-plugin.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -67,7 +68,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Nuxt Black Dashboard","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Nuxt Black Dashboard"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"nuxt-black-dashboard"},{"hid":"author","name":"author","content":"creativetim"},{"hid":"theme-color","name":"theme-color","content":"#fff"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"nuxt-black-dashboard"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"nuxt-black-dashboard"},{"hid":"og:description","name":"og:description","property":"og:description","content":"Nuxt Black Dashboard"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.png"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Poppins:200,300,400,600,700,800"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Ffont-awesome\u002F5.10.2\u002Fcss\u002Fall.min.css"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.2bda4ab0.json"}],"bodyAttrs":{"class":""},"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
+    head: {"title":"Nuxt Black Dashboard","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Nuxt Black Dashboard"},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"nuxt-black-dashboard"},{"hid":"author","name":"author","content":"creativetim"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"nuxt-black-dashboard"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"nuxt-black-dashboard"},{"hid":"og:description","name":"og:description","property":"og:description","content":"Nuxt Black Dashboard"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.png"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Poppins:200,300,400,600,700,800"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Ffont-awesome\u002F5.10.2\u002Fcss\u002Fall.min.css"},{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.2b233c.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.2b233c.png","sizes":"512x512"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.23098305.json","hid":"manifest"}],"bodyAttrs":{"class":""},"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
 
     store,
     router,
@@ -196,20 +197,24 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_1f6deb4b === 'function') {
-    await nuxt_plugin_workbox_1f6deb4b(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_nuxticons_4eb750b9 === 'function') {
-    await nuxt_plugin_nuxticons_4eb750b9(app.context, inject)
-  }
-
   if (typeof nuxt_plugin_pluginrouting_b6e2342c === 'function') {
     await nuxt_plugin_pluginrouting_b6e2342c(app.context, inject)
   }
 
   if (typeof nuxt_plugin_pluginmain_4363ddc5 === 'function') {
     await nuxt_plugin_pluginmain_4363ddc5(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_workbox_1f6deb4b === 'function') {
+    await nuxt_plugin_workbox_1f6deb4b(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_meta_b761af7c === 'function') {
+    await nuxt_plugin_meta_b761af7c(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_icons_56dbafa6 === 'function') {
+    await nuxt_plugin_icons_56dbafa6(app.context, inject)
   }
 
   if (typeof nuxt_plugin_dashboardplugin_111ada96 === 'function') {

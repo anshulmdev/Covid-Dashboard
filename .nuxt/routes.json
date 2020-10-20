@@ -3,144 +3,168 @@
     "name": "index___ar",
     "path": "/ar",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_33f3d127"
   },
   {
     "name": "google___en",
     "path": "/google",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\google.vue",
-    "chunkName": "pages/google"
+    "chunkName": "pages/google",
+    "_name": "_75c51598"
   },
   {
     "name": "icons___en",
     "path": "/icons",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\icons.vue",
-    "chunkName": "pages/icons"
+    "chunkName": "pages/icons",
+    "_name": "_1240976f"
   },
   {
     "name": "lockdown___en",
     "path": "/lockdown",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\lockdown.vue",
-    "chunkName": "pages/lockdown"
+    "chunkName": "pages/lockdown",
+    "_name": "_45a39c88"
   },
   {
     "name": "notifications___en",
     "path": "/notifications",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\notifications.vue",
-    "chunkName": "pages/notifications"
+    "chunkName": "pages/notifications",
+    "_name": "_7b67353d"
   },
   {
     "name": "regular___en",
     "path": "/regular",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\regular.vue",
-    "chunkName": "pages/regular"
+    "chunkName": "pages/regular",
+    "_name": "_7b04d09e"
   },
   {
     "name": "rtl___en",
     "path": "/rtl",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\rtl.vue",
-    "chunkName": "pages/rtl"
+    "chunkName": "pages/rtl",
+    "_name": "_2d0e61ff"
   },
   {
     "name": "starter-page___en",
     "path": "/starter-page",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\starter-page.vue",
-    "chunkName": "pages/starter-page"
+    "chunkName": "pages/starter-page",
+    "_name": "_be694870"
   },
   {
     "name": "states___en",
     "path": "/states",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\states.vue",
-    "chunkName": "pages/states"
+    "chunkName": "pages/states",
+    "_name": "_1418d87d"
   },
   {
     "name": "typography___en",
     "path": "/typography",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\typography.vue",
-    "chunkName": "pages/typography"
+    "chunkName": "pages/typography",
+    "_name": "_081a10ac"
   },
   {
     "name": "user___en",
     "path": "/user",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\user.vue",
-    "chunkName": "pages/user"
+    "chunkName": "pages/user",
+    "_name": "_6f26c686"
   },
   {
     "name": "google___ar",
     "path": "/ar/google",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\google.vue",
-    "chunkName": "pages/google"
+    "chunkName": "pages/google",
+    "_name": "_75c51598"
   },
   {
     "name": "icons___ar",
     "path": "/ar/icons",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\icons.vue",
-    "chunkName": "pages/icons"
+    "chunkName": "pages/icons",
+    "_name": "_1240976f"
   },
   {
     "name": "lockdown___ar",
     "path": "/ar/lockdown",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\lockdown.vue",
-    "chunkName": "pages/lockdown"
+    "chunkName": "pages/lockdown",
+    "_name": "_45a39c88"
   },
   {
     "name": "notifications___ar",
     "path": "/ar/notifications",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\notifications.vue",
-    "chunkName": "pages/notifications"
+    "chunkName": "pages/notifications",
+    "_name": "_7b67353d"
   },
   {
     "name": "regular___ar",
     "path": "/ar/regular",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\regular.vue",
-    "chunkName": "pages/regular"
+    "chunkName": "pages/regular",
+    "_name": "_7b04d09e"
   },
   {
     "name": "rtl___ar",
     "path": "/ar/rtl",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\rtl.vue",
-    "chunkName": "pages/rtl"
+    "chunkName": "pages/rtl",
+    "_name": "_2d0e61ff"
   },
   {
     "name": "starter-page___ar",
     "path": "/ar/starter-page",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\starter-page.vue",
-    "chunkName": "pages/starter-page"
+    "chunkName": "pages/starter-page",
+    "_name": "_be694870"
   },
   {
     "name": "states___ar",
     "path": "/ar/states",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\states.vue",
-    "chunkName": "pages/states"
+    "chunkName": "pages/states",
+    "_name": "_1418d87d"
   },
   {
     "name": "typography___ar",
     "path": "/ar/typography",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\typography.vue",
-    "chunkName": "pages/typography"
+    "chunkName": "pages/typography",
+    "_name": "_081a10ac"
   },
   {
     "name": "user___ar",
     "path": "/ar/user",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\user.vue",
-    "chunkName": "pages/user"
+    "chunkName": "pages/user",
+    "_name": "_6f26c686"
   },
   {
     "name": "GeneralViews-NotFoundPage___en",
     "path": "/GeneralViews/NotFoundPage",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
-    "chunkName": "pages/GeneralViews/NotFoundPage"
+    "chunkName": "pages/GeneralViews/NotFoundPage",
+    "_name": "_51fa1d3f"
   },
   {
     "name": "GeneralViews-NotFoundPage___ar",
     "path": "/ar/GeneralViews/NotFoundPage",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
-    "chunkName": "pages/GeneralViews/NotFoundPage"
+    "chunkName": "pages/GeneralViews/NotFoundPage",
+    "_name": "_51fa1d3f"
   },
   {
     "name": "index___en",
     "path": "/",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_33f3d127"
   }
 ]
