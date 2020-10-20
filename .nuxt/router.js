@@ -3,18 +3,18 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _25fab436 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _13f2f405 = () => interopDefault(import('..\\pages\\google.vue' /* webpackChunkName: "pages/google" */))
-const _04477a7e = () => interopDefault(import('..\\pages\\icons.vue' /* webpackChunkName: "pages/icons" */))
-const _3514ab19 = () => interopDefault(import('..\\pages\\lockdown.vue' /* webpackChunkName: "pages/lockdown" */))
-const _65dd994c = () => interopDefault(import('..\\pages\\notifications.vue' /* webpackChunkName: "pages/notifications" */))
-const _4e57f300 = () => interopDefault(import('..\\pages\\regular.vue' /* webpackChunkName: "pages/regular" */))
-const _bb7e8664 = () => interopDefault(import('..\\pages\\rtl.vue' /* webpackChunkName: "pages/rtl" */))
-const _3d00b9d9 = () => interopDefault(import('..\\pages\\starter-page.vue' /* webpackChunkName: "pages/starter-page" */))
-const _62ee574e = () => interopDefault(import('..\\pages\\states.vue' /* webpackChunkName: "pages/states" */))
-const _594ab40a = () => interopDefault(import('..\\pages\\typography.vue' /* webpackChunkName: "pages/typography" */))
-const _bf8074d2 = () => interopDefault(import('..\\pages\\user.vue' /* webpackChunkName: "pages/user" */))
-const _76050990 = () => interopDefault(import('..\\pages\\GeneralViews\\NotFoundPage.vue' /* webpackChunkName: "pages/GeneralViews/NotFoundPage" */))
+const _33f3d127 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _75c51598 = () => interopDefault(import('..\\pages\\google.vue' /* webpackChunkName: "pages/google" */))
+const _1240976f = () => interopDefault(import('..\\pages\\icons.vue' /* webpackChunkName: "pages/icons" */))
+const _45a39c88 = () => interopDefault(import('..\\pages\\lockdown.vue' /* webpackChunkName: "pages/lockdown" */))
+const _7b67353d = () => interopDefault(import('..\\pages\\notifications.vue' /* webpackChunkName: "pages/notifications" */))
+const _7b04d09e = () => interopDefault(import('..\\pages\\regular.vue' /* webpackChunkName: "pages/regular" */))
+const _2d0e61ff = () => interopDefault(import('..\\pages\\rtl.vue' /* webpackChunkName: "pages/rtl" */))
+const _be694870 = () => interopDefault(import('..\\pages\\starter-page.vue' /* webpackChunkName: "pages/starter-page" */))
+const _1418d87d = () => interopDefault(import('..\\pages\\states.vue' /* webpackChunkName: "pages/states" */))
+const _081a10ac = () => interopDefault(import('..\\pages\\typography.vue' /* webpackChunkName: "pages/typography" */))
+const _6f26c686 = () => interopDefault(import('..\\pages\\user.vue' /* webpackChunkName: "pages/user" */))
+const _51fa1d3f = () => interopDefault(import('..\\pages\\GeneralViews\\NotFoundPage.vue' /* webpackChunkName: "pages/GeneralViews/NotFoundPage" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -34,99 +34,99 @@ export const routerOptions = {
 
   routes: [{
     path: "/ar",
-    component: _25fab436,
+    component: _33f3d127,
     name: "index___ar"
   }, {
     path: "/google",
-    component: _13f2f405,
+    component: _75c51598,
     name: "google___en"
   }, {
     path: "/icons",
-    component: _04477a7e,
+    component: _1240976f,
     name: "icons___en"
   }, {
     path: "/lockdown",
-    component: _3514ab19,
+    component: _45a39c88,
     name: "lockdown___en"
   }, {
     path: "/notifications",
-    component: _65dd994c,
+    component: _7b67353d,
     name: "notifications___en"
   }, {
     path: "/regular",
-    component: _4e57f300,
+    component: _7b04d09e,
     name: "regular___en"
   }, {
     path: "/rtl",
-    component: _bb7e8664,
+    component: _2d0e61ff,
     name: "rtl___en"
   }, {
     path: "/starter-page",
-    component: _3d00b9d9,
+    component: _be694870,
     name: "starter-page___en"
   }, {
     path: "/states",
-    component: _62ee574e,
+    component: _1418d87d,
     name: "states___en"
   }, {
     path: "/typography",
-    component: _594ab40a,
+    component: _081a10ac,
     name: "typography___en"
   }, {
     path: "/user",
-    component: _bf8074d2,
+    component: _6f26c686,
     name: "user___en"
   }, {
     path: "/ar/google",
-    component: _13f2f405,
+    component: _75c51598,
     name: "google___ar"
   }, {
     path: "/ar/icons",
-    component: _04477a7e,
+    component: _1240976f,
     name: "icons___ar"
   }, {
     path: "/ar/lockdown",
-    component: _3514ab19,
+    component: _45a39c88,
     name: "lockdown___ar"
   }, {
     path: "/ar/notifications",
-    component: _65dd994c,
+    component: _7b67353d,
     name: "notifications___ar"
   }, {
     path: "/ar/regular",
-    component: _4e57f300,
+    component: _7b04d09e,
     name: "regular___ar"
   }, {
     path: "/ar/rtl",
-    component: _bb7e8664,
+    component: _2d0e61ff,
     name: "rtl___ar"
   }, {
     path: "/ar/starter-page",
-    component: _3d00b9d9,
+    component: _be694870,
     name: "starter-page___ar"
   }, {
     path: "/ar/states",
-    component: _62ee574e,
+    component: _1418d87d,
     name: "states___ar"
   }, {
     path: "/ar/typography",
-    component: _594ab40a,
+    component: _081a10ac,
     name: "typography___ar"
   }, {
     path: "/ar/user",
-    component: _bf8074d2,
+    component: _6f26c686,
     name: "user___ar"
   }, {
     path: "/GeneralViews/NotFoundPage",
-    component: _76050990,
+    component: _51fa1d3f,
     name: "GeneralViews-NotFoundPage___en"
   }, {
     path: "/ar/GeneralViews/NotFoundPage",
-    component: _76050990,
+    component: _51fa1d3f,
     name: "GeneralViews-NotFoundPage___ar"
   }, {
     path: "/",
-    component: _25fab436,
+    component: _33f3d127,
     name: "index___en"
   }],
 

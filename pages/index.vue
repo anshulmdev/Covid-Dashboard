@@ -32,19 +32,21 @@
     </div>
 
     <!-- Small charts -->
-    <div class="col-lg-4" :class="{ 'text-right': isRTL }">
+    <div class="col-lg-4">
         <card>
             <h4 slot="header" class="card-title">General Statistics</h4>
 
             <base-alert type="info"> Date of First Covid-19 Case:&nbsp; 30 Jan 2020</base-alert>
-            <base-alert type="info"> Number of days since first case:&nbsp; {{database.numberOfDays}} days</base-alert>
-            <base-alert type="info"> National recovery rate:&nbsp; {{database.recoveryRate}} %</base-alert>
+            <base-alert type="warning"> Number of days since first case:&nbsp; {{database.numberOfDays}} days</base-alert>
+            <base-alert type="primary"> National recovery rate:&nbsp; {{database.recoveryRate}} %</base-alert>
         </card>
     </div>
-    <div class="col-lg-8" :class="{ 'text-right': isRTL }">
+    <div class="col-lg-8">
         <card type="chart">
             <template slot="header">
-                <h5 class="card-category">Top 10 States (Recovery: in thousands)</h5>
+                <h5 class="card-category">Addition of new cases Month wise</h5>
+                <h3 class="card-title">
+                </h3>
             </template>
             <div class="chart-area">
                 <line-chart style="height: 100%" :chart-data="greenLineChart.chartData" :gradient-stops="greenLineChart.gradientStops" :extra-options="greenLineChart.extraOptions">
@@ -52,29 +54,25 @@
             </div>
         </card>
     </div>
-    <!-- Small charts -->
-
-    <div class="col-lg-4" :class="{ 'text-right': isRTL }">
+    <div class="col-lg-4">
         <card type="chart">
             <template slot="header">
-                <h5 class="card-category">Total Cases</h5>
+                <h5 class="card-category">Ongoing testing</h5>
                 <h3 class="card-title">
-                    <i class="tim-icons icon-bell-55 text-primary "></i> {{totalCases}}
+                    Tests per Million
                 </h3>
             </template>
             <div class="chart-area">
-                <line-chart style="height: 100%" :chart-data="purpleLineChart.chartData" :gradient-colors="purpleLineChart.gradientColors" :gradient-stops="purpleLineChart.gradientStops" :extra-options="purpleLineChart.extraOptions">
+                <line-chart style="height: 100%" :chart-data="newLineChart.chartData" :gradient-stops="newLineChart.gradientStops" :extra-options="newLineChart.extraOptions">
                 </line-chart>
             </div>
         </card>
     </div>
-
-    <div class="col-lg-4" :class="{ 'text-right': isRTL }">
+    <div class="col-lg-4">
         <card type="chart">
             <template slot="header">
-                <h5 class="card-category">Daily Sales</h5>
-                <h3 class="card-title">
-                    <i class="tim-icons icon-delivery-fast text-info "></i> 3,500€
+                <h5 class="card-category">Stages of ongoing </h5>
+                <h3 class="card-title">Vaccines in India
                 </h3>
             </template>
             <div class="chart-area">
@@ -83,38 +81,31 @@
             </div>
         </card>
     </div>
-    <div class="col-lg-4" :class="{ 'text-right': isRTL }">
+    <div class="col-lg-4">
         <card type="chart">
             <template slot="header">
-                <h5 class="card-category">Completed tasks</h5>
-                <h3 class="card-title">
-                    <i class="tim-icons icon-send text-success "></i> 12,100K
+                <h5 class="card-category">Covid cases</h5>
+                <h3 class="card-title">Gender ratio
                 </h3>
             </template>
             <div class="chart-area">
-                <line-chart style="height: 100%" :chart-data="greenLineChart.chartData" :gradient-stops="greenLineChart.gradientStops" :extra-options="greenLineChart.extraOptions">
-                </line-chart>
+                <pie-chart style="height: 100%" :chart-data="PieChart1.chartData" :gradient-stops="PieChart1.gradientStops" :extra-options="PieChart1.extraOptions">
+                </pie-chart>
             </div>
         </card>
     </div>
-    <div>
-        <card type="tasks" :header-classes="{ 'text-right': isRTL }">
-            <template slot="header" class="d-inline">
-                <h6 class="title d-inline">Tasks (5)</h6>
-                <p class="card-category d-inline">Today</p>
-
-                <base-dropdown menu-on-right="" tag="div" title-classes="btn btn-link btn-icon" class="float-right">
-                    <i slot="title" class="tim-icons icon-settings-gear-63"></i>
-                    <a class="dropdown-item" href="#pablo"> Action </a>
-                    <a class="dropdown-item" href="#pablo"> Another action </a>
-                    <a class="dropdown-item" href="#pablo"> Something else </a>
-                </base-dropdown>
-            </template>
-            <div class="table-full-width table-responsive">
-                <task-list></task-list>
-            </div>
-        </card>
-    </div>
+    <card type="chart">
+        <template slot="header">
+            <h5 class="card-category">Timeline of samples tested in India</h5>
+            <h3 class="card-title">
+                <i class="tim-icons icon-bell-55 text-primary "></i> {{database.tested}} Crores
+            </h3>
+        </template>
+        <div class="chart-area">
+            <line-chart style="height: 100%" :chart-data="purpleLineChart.chartData" :gradient-colors="purpleLineChart.gradientColors" :gradient-stops="purpleLineChart.gradientStops" :extra-options="purpleLineChart.extraOptions">
+            </line-chart>
+        </div>
+    </card>
 </div>
 </template>
 
@@ -126,7 +117,7 @@ import {
 import LineChart from '@/components/Charts/LineChart';
 import BarChart from '@/components/Charts/BarChart';
 import * as chartConfigs from '@/components/Charts/config';
-import TaskList from '@/components/Dashboard/TaskList';
+import PieChart from '@/components/Charts/PieChart';
 import config from '@/config';
 import {
     Table,
@@ -153,10 +144,10 @@ let bigChartDatasetOptions = {
 export default {
     name: 'dashboard',
     components: {
+        PieChart,
         BaseAlert,
         LineChart,
         BarChart,
-        TaskList,
         [Table.name]: Table,
         [TableColumn.name]: TableColumn
     },
@@ -167,7 +158,29 @@ export default {
                 numberOfDays: 0,
                 recovered: [],
                 names: [],
-                recoveryRate: 0
+                recoveryRate: 0,
+                tested: 0
+            },
+            PieChart1: {
+                extraOptions: chartConfigs.PieChartOptions,
+                chartData: {
+                    labels: ['Male', 'Female'],
+                    datasets: [{
+                        label: 'Gender Ratio',
+                        fill: true,
+                        borderColor: config.colors.info,
+                        borderWidth: 2,
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        data: [64.56, 35.44]
+                    }]
+                },
+                gradientColors: [
+                    'rgba(66,134,121,0.15)',
+                    'rgba(66,134,121,0.0)',
+                    'rgba(66,134,121,0)'
+                ],
+                gradientStops: [1, 0.4, 0]
             },
             bigLineChart: {
                 activeIndex: 0,
@@ -212,7 +225,7 @@ export default {
                 chartData: {
                     labels: [],
                     datasets: [{
-                        label: 'My First dataset',
+                        label: 'New Confirmed Cases',
                         fill: true,
                         borderColor: config.colors.danger,
                         borderWidth: 2,
@@ -235,18 +248,46 @@ export default {
                 ],
                 gradientStops: [1, 0.4, 0]
             },
-            blueBarChart: {
-                extraOptions: chartConfigs.barChartOptions,
+            newLineChart: {
+                extraOptions: chartConfigs.greenChartOptions,
                 chartData: {
                     labels: ['USA', 'GER', 'AUS', 'UK', 'RO', 'BR'],
                     datasets: [{
-                        label: 'Countries',
+                        label: 'Tests per million',
                         fill: true,
                         borderColor: config.colors.info,
                         borderWidth: 2,
                         borderDash: [],
                         borderDashOffset: 0.0,
-                        data: [53, 20, 10, 80, 100, 45]
+                        pointBackgroundColor: config.colors.info,
+                        pointBorderColor: 'rgba(255,255,255,0)',
+                        pointHoverBackgroundColor: config.colors.info,
+                        pointBorderWidth: 20,
+                        pointHoverRadius: 4,
+                        pointHoverBorderWidth: 15,
+                        pointRadius: 4,
+                        data: [0, 1, 2, 3, 4]
+                    }]
+                },
+                gradientColors: [
+                    'rgba(66,134,121,0.15)',
+                    'rgba(66,134,121,0.0)',
+                    'rgba(66,134,121,0)'
+                ],
+                gradientStops: [1, 0.4, 0]
+            },
+            blueBarChart: {
+                extraOptions: chartConfigs.barChartOptions,
+                chartData: {
+                    labels: ['AZD1222', 'Covaxin', 'ZyCoV-D'],
+                    datasets: [{
+                        label: 'Vaccines',
+                        fill: true,
+                        borderColor: config.colors.info,
+                        borderWidth: 2,
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        data: [300, 200, 200]
                     }]
                 },
                 gradientColors: config.colors.primaryGradient,
@@ -280,11 +321,16 @@ export default {
                 url: "https://api.covid19india.org/data.json",
                 method: 'get'
             })
+            const testData = []
+            const testDataDate = []
+            const testData2 = []
+            const testDataDate2 = []
             const database2 = []
             const database3 = []
             const database4 = []
             const database5 = []
             const lengthD = database.data.cases_time_series.length
+            const length2 = database.data.tested.length
             this.database.numberOfDays = lengthD - 1
             for (let i = 0; i < lengthD; i += 15) {
                 database2.push(parseInt(Object.values(database.data)[0][i].totalconfirmed))
@@ -292,35 +338,82 @@ export default {
                 database4.push(parseInt(Object.values(database.data)[0][i].totaldeceased))
                 database5.push(Object.values(database.data)[0][i].date.slice(0, 6))
             }
+            for (let i = 0; i < length2; i += 5) {
+                testData.push(parseInt(Object.values(database.data)[2][i].totalsamplestested))
+                testDataDate.push(Object.values(database.data)[2][i].testedasof)
+            }
+            for (let i = 0; i < length2; i += 30) {
+                testData2.push(parseInt(Object.values(database.data)[2][i].testspermillion))
+                testDataDate2.push(Object.values(database.data)[2][i].testedasof)
+            }
+            this.database.tested = parseInt(Object.values(database.data)[2][length2 - 1].totalsamplestested / 1000000)
             database2.push(parseInt(Object.values(database.data)[0][lengthD - 1].totalconfirmed))
             database3.push(parseInt(Object.values(database.data)[0][lengthD - 1].totalrecovered))
             database4.push(parseInt(Object.values(database.data)[0][lengthD - 1].totaldeceased))
             database5.push(Object.values(database.data)[0][lengthD - 1].date.slice(0, 6))
             bigChartLabels = database5
             bigChartData = [database2, database3, database4]
-            for (let i = 1; i < 11; i++) {
-                this.database.recovered.push(parseInt(parseInt(Object.values(database.data)[1][i].recovered) / 1000))
-                this.database.names.push(Object.values(database.data)[1][i].statecode)
+            for (let i = 0; i < lengthD; i += 30) {
+                this.database.recovered.push(parseInt(Object.values(database.data)[0][i].dailyconfirmed))
+                this.database.names.push(Object.values(database.data)[0][i].date.slice(2, 6))
             }
             this.database.recoveryRate = parseInt(parseInt((Object.values(database.data)[0][database.data.cases_time_series.length - 1].totalrecovered) * 100) / (Object.values(database.data)[0][database.data.cases_time_series.length - 1].totalconfirmed))
             this.initBigChart(0)
             this.greenLineChart.chartData = {
-                labels: this.database.names.reverse(),
+                labels: this.database.names,
                 datasets: [{
-                    label: 'My First dataset',
+                    label: 'New Confirmed Cases',
+                    fill: true,
+                    borderColor: config.colors.teal,
+                    borderWidth: 2,
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    pointBackgroundColor: config.colors.teal,
+                    pointBorderColor: config.colors.teal,
+                    pointHoverBackgroundColor: config.colors.teal,
+                    pointBorderWidth: 2,
+                    pointHoverRadius: 4,
+                    pointHoverBorderWidth: 15,
+                    pointRadius: 4,
+                    data: this.database.recovered
+                }]
+            }
+            this.purpleLineChart.chartData = {
+                labels: testDataDate,
+                datasets: [{
+                    label: 'Data',
                     fill: true,
                     borderColor: config.colors.info,
                     borderWidth: 2,
                     borderDash: [],
                     borderDashOffset: 0.0,
                     pointBackgroundColor: config.colors.info,
-                    pointBorderColor: config.colors.info,
+                    pointBorderColor: 'rgba(255,255,255,0)',
                     pointHoverBackgroundColor: config.colors.info,
-                    pointBorderWidth: 2,
+                    pointBorderWidth: 20,
                     pointHoverRadius: 4,
                     pointHoverBorderWidth: 15,
                     pointRadius: 4,
-                    data: this.database.recovered.reverse()
+                    data: testData
+                }]
+            }
+            this.newLineChart.chartData = {
+                labels: testDataDate2,
+                datasets: [{
+                    label: 'Tests per million',
+                    fill: true,
+                    borderColor: config.colors.info,
+                    borderWidth: 2,
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    pointBackgroundColor: config.colors.info,
+                    pointBorderColor: 'rgba(255,255,255,0)',
+                    pointHoverBackgroundColor: config.colors.info,
+                    pointBorderWidth: 20,
+                    pointHoverRadius: 4,
+                    pointHoverBorderWidth: 15,
+                    pointRadius: 4,
+                    data: testData2
                 }]
             }
         },

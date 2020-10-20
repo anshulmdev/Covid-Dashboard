@@ -2,169 +2,145 @@
   {
     "name": "index___ar",
     "path": "/ar",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_25fab436"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   },
   {
     "name": "google___en",
     "path": "/google",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\google.vue",
-    "chunkName": "pages/google",
-    "_name": "_13f2f405"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\google.vue",
+    "chunkName": "pages/google"
   },
   {
     "name": "icons___en",
     "path": "/icons",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\icons.vue",
-    "chunkName": "pages/icons",
-    "_name": "_04477a7e"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\icons.vue",
+    "chunkName": "pages/icons"
   },
   {
     "name": "lockdown___en",
     "path": "/lockdown",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\lockdown.vue",
-    "chunkName": "pages/lockdown",
-    "_name": "_3514ab19"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\lockdown.vue",
+    "chunkName": "pages/lockdown"
   },
   {
     "name": "notifications___en",
     "path": "/notifications",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\notifications.vue",
-    "chunkName": "pages/notifications",
-    "_name": "_65dd994c"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\notifications.vue",
+    "chunkName": "pages/notifications"
   },
   {
     "name": "regular___en",
     "path": "/regular",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\regular.vue",
-    "chunkName": "pages/regular",
-    "_name": "_4e57f300"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\regular.vue",
+    "chunkName": "pages/regular"
   },
   {
     "name": "rtl___en",
     "path": "/rtl",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\rtl.vue",
-    "chunkName": "pages/rtl",
-    "_name": "_bb7e8664"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\rtl.vue",
+    "chunkName": "pages/rtl"
   },
   {
     "name": "starter-page___en",
     "path": "/starter-page",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\starter-page.vue",
-    "chunkName": "pages/starter-page",
-    "_name": "_3d00b9d9"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\starter-page.vue",
+    "chunkName": "pages/starter-page"
   },
   {
     "name": "states___en",
     "path": "/states",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\states.vue",
-    "chunkName": "pages/states",
-    "_name": "_62ee574e"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\states.vue",
+    "chunkName": "pages/states"
   },
   {
     "name": "typography___en",
     "path": "/typography",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\typography.vue",
-    "chunkName": "pages/typography",
-    "_name": "_594ab40a"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\typography.vue",
+    "chunkName": "pages/typography"
   },
   {
     "name": "user___en",
     "path": "/user",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\user.vue",
-    "chunkName": "pages/user",
-    "_name": "_bf8074d2"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\user.vue",
+    "chunkName": "pages/user"
   },
   {
     "name": "google___ar",
     "path": "/ar/google",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\google.vue",
-    "chunkName": "pages/google",
-    "_name": "_13f2f405"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\google.vue",
+    "chunkName": "pages/google"
   },
   {
     "name": "icons___ar",
     "path": "/ar/icons",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\icons.vue",
-    "chunkName": "pages/icons",
-    "_name": "_04477a7e"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\icons.vue",
+    "chunkName": "pages/icons"
   },
   {
     "name": "lockdown___ar",
     "path": "/ar/lockdown",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\lockdown.vue",
-    "chunkName": "pages/lockdown",
-    "_name": "_3514ab19"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\lockdown.vue",
+    "chunkName": "pages/lockdown"
   },
   {
     "name": "notifications___ar",
     "path": "/ar/notifications",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\notifications.vue",
-    "chunkName": "pages/notifications",
-    "_name": "_65dd994c"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\notifications.vue",
+    "chunkName": "pages/notifications"
   },
   {
     "name": "regular___ar",
     "path": "/ar/regular",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\regular.vue",
-    "chunkName": "pages/regular",
-    "_name": "_4e57f300"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\regular.vue",
+    "chunkName": "pages/regular"
   },
   {
     "name": "rtl___ar",
     "path": "/ar/rtl",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\rtl.vue",
-    "chunkName": "pages/rtl",
-    "_name": "_bb7e8664"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\rtl.vue",
+    "chunkName": "pages/rtl"
   },
   {
     "name": "starter-page___ar",
     "path": "/ar/starter-page",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\starter-page.vue",
-    "chunkName": "pages/starter-page",
-    "_name": "_3d00b9d9"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\starter-page.vue",
+    "chunkName": "pages/starter-page"
   },
   {
     "name": "states___ar",
     "path": "/ar/states",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\states.vue",
-    "chunkName": "pages/states",
-    "_name": "_62ee574e"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\states.vue",
+    "chunkName": "pages/states"
   },
   {
     "name": "typography___ar",
     "path": "/ar/typography",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\typography.vue",
-    "chunkName": "pages/typography",
-    "_name": "_594ab40a"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\typography.vue",
+    "chunkName": "pages/typography"
   },
   {
     "name": "user___ar",
     "path": "/ar/user",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\user.vue",
-    "chunkName": "pages/user",
-    "_name": "_bf8074d2"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\user.vue",
+    "chunkName": "pages/user"
   },
   {
     "name": "GeneralViews-NotFoundPage___en",
     "path": "/GeneralViews/NotFoundPage",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
-    "chunkName": "pages/GeneralViews/NotFoundPage",
-    "_name": "_76050990"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
+    "chunkName": "pages/GeneralViews/NotFoundPage"
   },
   {
     "name": "GeneralViews-NotFoundPage___ar",
     "path": "/ar/GeneralViews/NotFoundPage",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
-    "chunkName": "pages/GeneralViews/NotFoundPage",
-    "_name": "_76050990"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
+    "chunkName": "pages/GeneralViews/NotFoundPage"
   },
   {
     "name": "index___en",
     "path": "/",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covidD\\\\nuxt-black-dashboard-master\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_25fab436"
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]
