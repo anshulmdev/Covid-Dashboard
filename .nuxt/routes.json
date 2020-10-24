@@ -1,24 +1,24 @@
 [
   {
+    "name": "about___en",
+    "path": "/about",
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_143bf662"
+  },
+  {
+    "name": "analytics___en",
+    "path": "/analytics",
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\analytics.vue",
+    "chunkName": "pages/analytics",
+    "_name": "_2f4f235b"
+  },
+  {
     "name": "index___ar",
     "path": "/ar",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
     "_name": "_33f3d127"
-  },
-  {
-    "name": "google___en",
-    "path": "/google",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\google.vue",
-    "chunkName": "pages/google",
-    "_name": "_75c51598"
-  },
-  {
-    "name": "icons___en",
-    "path": "/icons",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\icons.vue",
-    "chunkName": "pages/icons",
-    "_name": "_1240976f"
   },
   {
     "name": "lockdown___en",
@@ -35,27 +35,6 @@
     "_name": "_7b67353d"
   },
   {
-    "name": "regular___en",
-    "path": "/regular",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\regular.vue",
-    "chunkName": "pages/regular",
-    "_name": "_7b04d09e"
-  },
-  {
-    "name": "rtl___en",
-    "path": "/rtl",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\rtl.vue",
-    "chunkName": "pages/rtl",
-    "_name": "_2d0e61ff"
-  },
-  {
-    "name": "starter-page___en",
-    "path": "/starter-page",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\starter-page.vue",
-    "chunkName": "pages/starter-page",
-    "_name": "_be694870"
-  },
-  {
     "name": "states___en",
     "path": "/states",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\states.vue",
@@ -63,32 +42,18 @@
     "_name": "_1418d87d"
   },
   {
-    "name": "typography___en",
-    "path": "/typography",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\typography.vue",
-    "chunkName": "pages/typography",
-    "_name": "_081a10ac"
+    "name": "about___ar",
+    "path": "/ar/about",
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_143bf662"
   },
   {
-    "name": "user___en",
-    "path": "/user",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\user.vue",
-    "chunkName": "pages/user",
-    "_name": "_6f26c686"
-  },
-  {
-    "name": "google___ar",
-    "path": "/ar/google",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\google.vue",
-    "chunkName": "pages/google",
-    "_name": "_75c51598"
-  },
-  {
-    "name": "icons___ar",
-    "path": "/ar/icons",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\icons.vue",
-    "chunkName": "pages/icons",
-    "_name": "_1240976f"
+    "name": "analytics___ar",
+    "path": "/ar/analytics",
+    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\analytics.vue",
+    "chunkName": "pages/analytics",
+    "_name": "_2f4f235b"
   },
   {
     "name": "lockdown___ar",
@@ -105,46 +70,11 @@
     "_name": "_7b67353d"
   },
   {
-    "name": "regular___ar",
-    "path": "/ar/regular",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\regular.vue",
-    "chunkName": "pages/regular",
-    "_name": "_7b04d09e"
-  },
-  {
-    "name": "rtl___ar",
-    "path": "/ar/rtl",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\rtl.vue",
-    "chunkName": "pages/rtl",
-    "_name": "_2d0e61ff"
-  },
-  {
-    "name": "starter-page___ar",
-    "path": "/ar/starter-page",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\starter-page.vue",
-    "chunkName": "pages/starter-page",
-    "_name": "_be694870"
-  },
-  {
     "name": "states___ar",
     "path": "/ar/states",
     "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\states.vue",
     "chunkName": "pages/states",
     "_name": "_1418d87d"
-  },
-  {
-    "name": "typography___ar",
-    "path": "/ar/typography",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\typography.vue",
-    "chunkName": "pages/typography",
-    "_name": "_081a10ac"
-  },
-  {
-    "name": "user___ar",
-    "path": "/ar/user",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\user.vue",
-    "chunkName": "pages/user",
-    "_name": "_6f26c686"
   },
   {
     "name": "GeneralViews-NotFoundPage___en",

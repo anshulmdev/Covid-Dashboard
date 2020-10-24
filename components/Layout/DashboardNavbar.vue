@@ -12,21 +12,17 @@
     </div>
 
     <ul class="navbar-nav" :class="$rtl.isRTL ? 'mr-auto' : 'ml-auto'">
-        <div class="search-bar input-group" @click="searchModalVisible = true">
-            <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal">
-                <i class="tim-icons icon-zoom-split"></i>
-            </button>
-            <!-- You can choose types of search input -->
-        </div>
         <modal :show.sync="searchModalVisible" class="modal-search" id="searchModal" :centered="false" :show-close="true">
             <input slot="header" v-model="searchQuery" type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH" />
         </modal>
         <base-dropdown tag="li" :menu-on-right="!$rtl.isRTL" title-tag="a" title-classes="nav-link" class="nav-item">
             <template slot="title">
                 <div class="notification d-none d-lg-block d-xl-block"></div>
-                <i class="tim-icons icon-sound-wave"></i>
-                <p class="d-lg-none">New Notifications</p>
+                <i class="tim-icons icon-cloud-download-93"></i>
             </template>
+            <div class="nav-item dropdown-item">
+                <p class="card-category" style="color:black">Notifications</p>
+            </div>
             <template v-for="(notif, index) in notifis">
                 <div :key="index">
                     <li class="nav-link">
@@ -37,17 +33,12 @@
         </base-dropdown>
         <base-dropdown tag="li" :menu-on-right="!$rtl.isRTL" title-tag="a" class="nav-item" title-classes="nav-link" menu-classes="dropdown-navbar">
             <template slot="title">
+                <div class="notification d-none d-lg-block d-xl-block"></div>
                 <div class="photo"><img src="img/mike.jpg" /></div>
-                <b class="caret d-none d-lg-block d-xl-block"></b>
-                <p class="d-lg-none">Log out</p>
             </template>
-            <template v-for="(notif, index) in notifis">
-                <div :key="index">
-                    <li class="nav-link">
-                        <a :href="urls[index]" class="nav-item dropdown-item">{{notif}}...</a>
-                    </li>
-                </div>
-            </template>
+            <li class="nav-link">
+                <a href="/" class="nav-item dropdown-item"><i class="tim-icons icon-refresh-01 text-primary "></i> Reload</a>
+            </li>
         </base-dropdown>
     </ul>
 </base-nav>

@@ -1,142 +1,54 @@
 <template>
-  <card>
-    <h5 slot="header" class="title">Edit Profile</h5>
-    <form @submit.prevent="updateProfile">
-      <div class="row">
-        <div class="col-md-5">
-          <base-input
-            type="text"
-            label="Company"
-            :disabled="true"
-            placeholder="Company"
-            v-model="user.company"
-          >
-          </base-input>
+<card>
+    <h5 slot="header" class="title">Team Details</h5>
+    <form>
+        <div class="row">
+            <div class="col-md-6">
+                <base-input type="text" label="Name" :disabled="true" placeholder="Anshul Mishra">
+                </base-input>
+            </div>
+            <div class="col-md-6">
+                <base-input type="text" label="Name" :disabled="true" placeholder="Aman Negi">
+                </base-input>
+            </div>
         </div>
-        <div class="col-md-3">
-          <base-input
-            type="text"
-            label="Username"
-            placeholder="Username"
-            v-model="user.username"
-          >
-          </base-input>
+        <div class="row">
+            <div class="col-md-6">
+                <base-input type="text" label="Roll Number" :disabled="true" placeholder="41220902717">
+                </base-input>
+            </div>
+            <div class="col-md-6">
+                <base-input type="text" label="Roll Number" :disabled="true" placeholder="41520902717">
+                </base-input>
+            </div>
         </div>
-        <div class="col-md-4">
-          <base-input
-            type="email"
-            label="Email address"
-            placeholder="mike@email.com"
-            v-model="user.email"
-          >
-          </base-input>
+        <div class="row">
+            <div class="col-md-6">
+                <base-input type="text" label="Year" :disabled="true" placeholder="CSE VII Sem">
+                </base-input>
+            </div>
+            <div class="col-md-6">
+                <base-input type="text" label="Year" :disabled="true" placeholder="CSE VII Sem">
+                </base-input>
+            </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          <base-input
-            type="text"
-            label="First Name"
-            placeholder="First Name"
-            v-model="user.firstName"
-          >
-          </base-input>
-        </div>
-        <div class="col-md-6">
-          <base-input
-            type="text"
-            label="Last Name"
-            placeholder="Last Name"
-            v-model="user.lastName"
-          >
-          </base-input>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <base-input
-            type="text"
-            label="Address"
-            placeholder="Home Address"
-            v-model="user.address"
-          >
-          </base-input>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <base-input
-            type="text"
-            label="City"
-            placeholder="City"
-            v-model="user.city"
-          >
-          </base-input>
-        </div>
-        <div class="col-md-4">
-          <base-input
-            type="text"
-            label="Country"
-            placeholder="Country"
-            v-model="user.country"
-          >
-          </base-input>
-        </div>
-        <div class="col-md-4">
-          <base-input
-            label="Postal Code"
-            placeholder="ZIP Code"
-            v-model="user.postalCode"
-          >
-          </base-input>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <base-input label="About Me">
-            <textarea
-              class="form-control"
-              placeholder="ZIP Code"
-              v-model="user.aboutMe"
-            >
+        <div class="row">
+            <div class="col-md-12">
+                <base-input label="About Project">
+                    <textarea class="form-control" placeholder="Will write later">
             </textarea>
-          </base-input>
+                </base-input>
+            </div>
         </div>
-      </div>
-
-      <base-button native-type="submit" type="primary" class="btn-fill">
-        Save
-      </base-button>
     </form>
-  </card>
+</card>
 </template>
+
 <script>
 export default {
-  data() {
-    return {
-      user: {
-        company: 'Creative Code Inc.',
-        username: 'michael23',
-        email: '',
-        firstName: 'Mike',
-        lastName: 'Andrew',
-        address: 'Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09',
-        city: 'New York',
-        country: 'USA',
-        postalCode: '',
-        aboutMe: `Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.`
-      }
-    };
-  },
-  methods: {
-    updateProfile() {
-      alert('Your data: ' + JSON.stringify(this.user));
-    }
-  }
+    methods: {}
 };
 </script>
+
 <style></style>

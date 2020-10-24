@@ -1,38 +1,33 @@
 <template>
-  <card class="card-user">
+<card class="card-user">
     <p class="card-text"></p>
     <div class="author">
-      <div class="block block-one"></div>
-      <div class="block block-two"></div>
-      <div class="block block-three"></div>
-      <div class="block block-four"></div>
-      <a href="javascript:void(0)">
-        <img class="avatar" src="img/emilyz.jpg" alt="..." />
-        <h5 class="title">Mike Andrew</h5>
-      </a>
-      <p class="description">Ceo/Co-Founder</p>
+        <div class="block block-one"></div>
+        <div class="block block-two"></div>
+        <div class="block block-three"></div>
+        <div class="block block-four"></div>
+        <a href="javascript:void(0)">
+            <img class="avatar" src="https://firebasestorage.googleapis.com/v0/b/avid-airway-275507.appspot.com/o/logo.png?alt=media&token=c6c8e1f8-0baf-4d14-b657-4198ac4e83dc" alt="..." />
+            <h5 class="title">G.B. Pant</h5>
+        </a>
+        <p class="description">Government Engineering College</p>
     </div>
     <p></p>
     <div class="card-description">
-      Do not be scared of the truth because we need to restart the human
-      foundation in truth And I love you like Kanye loves Kanye I love Rick
-      Owens’ bed design but the back is...
+        GBPEC Delhi is affiliated to GGSIPU New Delhi
+        and recognized by the AICTE New Delhi.
+        The campus of the college is located at Okhla Industrial Estate, Phase-III New Delhi.
     </div>
-
     <div slot="footer" class="button-container">
-      <base-button class="btn-facebook" icon round>
-        <i class="fab fa-facebook"></i>
-      </base-button>
-      <base-button class="btn-twitter" icon round>
-        <i class="fab fa-twitter"></i>
-      </base-button>
-      <base-button class="btn-google" icon round>
-        <i class="fab fa-google-plus"></i>
-      </base-button>
+        <base-button native-type="submit" type="primary" class="btn-fill">
+            Contact
+        </base-button>
     </div>
-  </card>
+</card>
 </template>
+
 <script>
 export default {};
 </script>
+
 <style></style>
