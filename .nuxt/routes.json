@@ -2,99 +2,99 @@
   {
     "name": "about___en",
     "path": "/about",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\about.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\about.vue",
     "chunkName": "pages/about",
-    "_name": "_143bf662"
+    "_name": "_ea57de6e"
   },
   {
     "name": "analytics___en",
     "path": "/analytics",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\analytics.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\analytics.vue",
     "chunkName": "pages/analytics",
-    "_name": "_2f4f235b"
+    "_name": "_0df5b242"
   },
   {
     "name": "index___ar",
     "path": "/ar",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_33f3d127"
+    "_name": "_aae828e4"
   },
   {
     "name": "lockdown___en",
     "path": "/lockdown",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\lockdown.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\lockdown.vue",
     "chunkName": "pages/lockdown",
-    "_name": "_45a39c88"
+    "_name": "_340c14c1"
   },
   {
     "name": "notifications___en",
     "path": "/notifications",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\notifications.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\notifications.vue",
     "chunkName": "pages/notifications",
-    "_name": "_7b67353d"
+    "_name": "_74cdf8a4"
   },
   {
     "name": "states___en",
     "path": "/states",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\states.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\states.vue",
     "chunkName": "pages/states",
-    "_name": "_1418d87d"
+    "_name": "_70840af6"
   },
   {
     "name": "about___ar",
     "path": "/ar/about",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\about.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\about.vue",
     "chunkName": "pages/about",
-    "_name": "_143bf662"
+    "_name": "_ea57de6e"
   },
   {
     "name": "analytics___ar",
     "path": "/ar/analytics",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\analytics.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\analytics.vue",
     "chunkName": "pages/analytics",
-    "_name": "_2f4f235b"
+    "_name": "_0df5b242"
   },
   {
     "name": "lockdown___ar",
     "path": "/ar/lockdown",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\lockdown.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\lockdown.vue",
     "chunkName": "pages/lockdown",
-    "_name": "_45a39c88"
+    "_name": "_340c14c1"
   },
   {
     "name": "notifications___ar",
     "path": "/ar/notifications",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\notifications.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\notifications.vue",
     "chunkName": "pages/notifications",
-    "_name": "_7b67353d"
+    "_name": "_74cdf8a4"
   },
   {
     "name": "states___ar",
     "path": "/ar/states",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\states.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\states.vue",
     "chunkName": "pages/states",
-    "_name": "_1418d87d"
+    "_name": "_70840af6"
   },
   {
     "name": "GeneralViews-NotFoundPage___en",
     "path": "/GeneralViews/NotFoundPage",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
     "chunkName": "pages/GeneralViews/NotFoundPage",
-    "_name": "_51fa1d3f"
+    "_name": "_1f245938"
   },
   {
     "name": "GeneralViews-NotFoundPage___ar",
     "path": "/ar/GeneralViews/NotFoundPage",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
     "chunkName": "pages/GeneralViews/NotFoundPage",
-    "_name": "_51fa1d3f"
+    "_name": "_1f245938"
   },
   {
     "name": "index___en",
     "path": "/",
-    "component": "C:\\\\Users\\\\anshu\\\\Desktop\\\\covid\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\anshu\\\\OneDrive\\\\Cloudify\\\\Projects\\\\covid\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_33f3d127"
+    "_name": "_aae828e4"
   }
 ]

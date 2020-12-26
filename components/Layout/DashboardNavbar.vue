@@ -33,11 +33,13 @@
         </base-dropdown>
         <base-dropdown tag="li" :menu-on-right="!$rtl.isRTL" title-tag="a" class="nav-item" title-classes="nav-link" menu-classes="dropdown-navbar">
             <template slot="title">
-                <div class="notification d-none d-lg-block d-xl-block"></div>
-                <div class="photo"><img src="img/mike.jpg" /></div>
+                <div class="photo"><img src="https://firebasestorage.googleapis.com/v0/b/avid-airway-275507.appspot.com/o/logo.png?alt=media&token=c6c8e1f8-0baf-4d14-b657-4198ac4e83dc" /></div>
             </template>
             <li class="nav-link">
-                <a href="/" class="nav-item dropdown-item"><i class="tim-icons icon-refresh-01 text-primary "></i> Reload</a>
+                <a href="/" class="nav-item dropdown-item"><i class="tim-icons icon-single-02 text-primary "></i> Dashboard</a>
+                <a href="/states" class="nav-item dropdown-item"><i class="tim-icons icon-chart-pie-36 text-info "></i> Analysis</a>
+                <a href="/analytics" class="nav-item dropdown-item"><i class="tim-icons icon-chart-bar-32 text-link "></i> Analytics</a>
+                <a href="/about" class="nav-item dropdown-item"><i class="tim-icons icon-atom text-warning "></i> Profile</a>
             </li>
         </base-dropdown>
     </ul>

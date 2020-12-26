@@ -433,13 +433,16 @@ export default {
             const nn = []
             const lengthD = database.data.cases_time_series.length
             const totalCases = parseInt((Object.values(database.data)[0][database.data.cases_time_series.length - 1].totalconfirmed))
-            for (let i = 45; i < lengthD; i += 7) {
-                const total = parseInt(Object.values(database.data)[0][i].totalconfirmed)
-                const last = parseInt(Object.values(database.data)[0][i - 1].totalconfirmed)
-                dd.push(parseInt(5 * (Math.log(2) / (Math.log(total / last)))))
+            const filteredData = database.data.cases_time_series
+            let double_rate = 0
+            var i=45
+            while (i < lengthD) {
+                double_rate=5*(Math.log(2)/(Math.log(filteredData[i].totalconfirmed/filteredData[i-5].totalconfirmed)))
+                console.log(double_rate)
+                dd.push(double_rate.toPrecision(4))
                 nn.push(Object.values(database.data)[0][i].date.slice(0, 6))
+                i=i+5;
             }
-            console.log(dd, nn)
             this.greenLineChart.chartData = {
                 labels: nn,
                 datasets: [{

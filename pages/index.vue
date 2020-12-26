@@ -279,7 +279,7 @@ export default {
             blueBarChart: {
                 extraOptions: chartConfigs.barChartOptions,
                 chartData: {
-                    labels: ['AZD1222', 'Covaxin', 'ZyCoV-D'],
+                    labels: ['Covaxin','Covishield', 'ZyCoV-D', 'Sputnik V', 'NVX-CoV2373', 'Antigen vaccine', 'HGCO 19', 'Inactivated rabies vector', 'Vesiculo Vax platform'],
                     datasets: [{
                         label: 'Vaccines',
                         fill: true,
@@ -287,7 +287,7 @@ export default {
                         borderWidth: 2,
                         borderDash: [],
                         borderDashOffset: 0.0,
-                        data: [300, 200, 200]
+                        data: [300,250,200,250,250,200,100,100,100]
                     }]
                 },
                 gradientColors: config.colors.primaryGradient,

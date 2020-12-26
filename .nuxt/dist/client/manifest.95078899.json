@@ -1,0 +1,10 @@
+{
+  "name": "nuxt-black-dashboard",
+  "short_name": "nuxt-black-dashboard",
+  "description": "Nuxt Black Dashboard",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}

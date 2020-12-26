@@ -3,13 +3,13 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _143bf662 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
-const _2f4f235b = () => interopDefault(import('..\\pages\\analytics.vue' /* webpackChunkName: "pages/analytics" */))
-const _33f3d127 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _45a39c88 = () => interopDefault(import('..\\pages\\lockdown.vue' /* webpackChunkName: "pages/lockdown" */))
-const _7b67353d = () => interopDefault(import('..\\pages\\notifications.vue' /* webpackChunkName: "pages/notifications" */))
-const _1418d87d = () => interopDefault(import('..\\pages\\states.vue' /* webpackChunkName: "pages/states" */))
-const _51fa1d3f = () => interopDefault(import('..\\pages\\GeneralViews\\NotFoundPage.vue' /* webpackChunkName: "pages/GeneralViews/NotFoundPage" */))
+const _ea57de6e = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
+const _0df5b242 = () => interopDefault(import('..\\pages\\analytics.vue' /* webpackChunkName: "pages/analytics" */))
+const _aae828e4 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _340c14c1 = () => interopDefault(import('..\\pages\\lockdown.vue' /* webpackChunkName: "pages/lockdown" */))
+const _74cdf8a4 = () => interopDefault(import('..\\pages\\notifications.vue' /* webpackChunkName: "pages/notifications" */))
+const _70840af6 = () => interopDefault(import('..\\pages\\states.vue' /* webpackChunkName: "pages/states" */))
+const _1f245938 = () => interopDefault(import('..\\pages\\GeneralViews\\NotFoundPage.vue' /* webpackChunkName: "pages/GeneralViews/NotFoundPage" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -29,59 +29,59 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _143bf662,
+    component: _ea57de6e,
     name: "about___en"
   }, {
     path: "/analytics",
-    component: _2f4f235b,
+    component: _0df5b242,
     name: "analytics___en"
   }, {
     path: "/ar",
-    component: _33f3d127,
+    component: _aae828e4,
     name: "index___ar"
   }, {
     path: "/lockdown",
-    component: _45a39c88,
+    component: _340c14c1,
     name: "lockdown___en"
   }, {
     path: "/notifications",
-    component: _7b67353d,
+    component: _74cdf8a4,
     name: "notifications___en"
   }, {
     path: "/states",
-    component: _1418d87d,
+    component: _70840af6,
     name: "states___en"
   }, {
     path: "/ar/about",
-    component: _143bf662,
+    component: _ea57de6e,
     name: "about___ar"
   }, {
     path: "/ar/analytics",
-    component: _2f4f235b,
+    component: _0df5b242,
     name: "analytics___ar"
   }, {
     path: "/ar/lockdown",
-    component: _45a39c88,
+    component: _340c14c1,
     name: "lockdown___ar"
   }, {
     path: "/ar/notifications",
-    component: _7b67353d,
+    component: _74cdf8a4,
     name: "notifications___ar"
   }, {
     path: "/ar/states",
-    component: _1418d87d,
+    component: _70840af6,
     name: "states___ar"
   }, {
     path: "/GeneralViews/NotFoundPage",
-    component: _51fa1d3f,
+    component: _1f245938,
     name: "GeneralViews-NotFoundPage___en"
   }, {
     path: "/ar/GeneralViews/NotFoundPage",
-    component: _51fa1d3f,
+    component: _1f245938,
     name: "GeneralViews-NotFoundPage___ar"
   }, {
     path: "/",
-    component: _33f3d127,
+    component: _aae828e4,
     name: "index___en"
   }],
 
