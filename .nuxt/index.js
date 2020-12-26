@@ -17,6 +17,7 @@ import nuxt_plugin_pluginrouting_d3ac6946 from 'nuxt_plugin_pluginrouting_d3ac69
 import nuxt_plugin_pluginmain_85bdb59c from 'nuxt_plugin_pluginmain_85bdb59c' // Source: .\\nuxt-i18n\\plugin.main.js (mode: 'all')
 import nuxt_plugin_workbox_128f0578 from 'nuxt_plugin_workbox_128f0578' // Source: .\\workbox.js (mode: 'client')
 import nuxt_plugin_meta_155153b5 from 'nuxt_plugin_meta_155153b5' // Source: .\\pwa\\meta.js (mode: 'all')
+import nuxt_plugin_icons_f85529cc from 'nuxt_plugin_icons_f85529cc' // Source: .\\pwa\\icons.js (mode: 'all')
 import nuxt_plugin_dashboardplugin_111ada96 from 'nuxt_plugin_dashboardplugin_111ada96' // Source: ..\\plugins\\dashboard-plugin.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -70,7 +71,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Nuxt Black Dashboard","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Nuxt Black Dashboard"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.png"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Poppins:200,300,400,600,700,800"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Ffont-awesome\u002F5.10.2\u002Fcss\u002Fall.min.css"}],"bodyAttrs":{"class":""},"style":[],"script":[]},
+    head: {"title":"Covid19 Dashboard","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Nuxt Black Dashboard"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Poppins:200,300,400,600,700,800"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Ffont-awesome\u002F5.10.2\u002Fcss\u002Fall.min.css"}],"bodyAttrs":{"class":""},"style":[],"script":[]},
 
     store,
     router,
@@ -213,6 +214,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_meta_155153b5 === 'function') {
     await nuxt_plugin_meta_155153b5(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_icons_f85529cc === 'function') {
+    await nuxt_plugin_icons_f85529cc(app.context, inject)
   }
 
   if (typeof nuxt_plugin_dashboardplugin_111ada96 === 'function') {
