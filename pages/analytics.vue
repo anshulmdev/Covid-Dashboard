@@ -2,7 +2,7 @@
 <div>
     <card>
         <div class="card-header mb-5">
-            <h3 class="card-title">Polynomial Regression considering categories : </h3>
+            <h3 class="card-title">Polynomial Regression considering categories</h3>
         </div>
         <div class="row">
             <div class="col-lg-4">
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="card-header mb-5">
-            <h3 class="card-title">Daily confirmed cases: {{dateToday}}</h3>
+            <h3 class="card-title">Daily confirmed cases: <span v-html="dateToday"></span></h3>
         </div>
         <div class="chart-area">
             <line-chart style="height: 100%" :chart-data="greenLineChart.chartData" :gradient-stops="greenLineChart.gradientStops" :extra-options="greenLineChart.extraOptions">
@@ -61,6 +61,15 @@
                 </base-button>
             </div>
         </center>
+    </card>
+    <card v-if="dateToday">
+        <div class="card-header mb-5">
+            <h3 class="card-title">Polynomial Regression API Details</h3>
+        </div>
+        <p> Formulae: <span v-html="dateToday"></span></p><br>
+        <p> R-squared: r2=0.87</p><br>
+        <p> Adjusted R-squared: r2 adj = 0.87</p><br>
+        <p> Regression Polynomial: CASES = − 0.02(DAYS<sup>3</sup>) + 9.78(DAYS<sup>2</sup>) − 1026.33(DAYS) + 13971.08</p><br>
     </card>
 </div>
 </template>
@@ -80,12 +89,13 @@ export default {
     },
     data() {
         return {
+            data:0,
             database: {
                 label: [],
                 cases: [],
                 totalCases: 0
             },
-            dateToday: String(new Date).slice(3, 15),
+            dateToday: null,
             PieChart1: {
                 extraOptions: chartConfigs.PieChartOptions,
                 chartData: {
@@ -181,20 +191,15 @@ export default {
     },
     methods: {
         async predict() {
-            const database = await axios({
-                url: "https://covid19-api.org/api/prediction/IN",
-                method: 'get'
-            })
+            if(!this.dateToday){
+            const days = this.data
             const labels = []
             const cases = []
-            const lengthOfData = Object.values(database.data).length
-            const first = Object.values(database.data)[0].date.split('-').reverse().join('-')
-            const last = Object.values(database.data)[lengthOfData - 1].date.split('-').reverse().join('-')
-            let temp = this.database.totalCases
-            for (let i = 0; i < lengthOfData; i++) {
-                this.database.label.push(Object.values(database.data)[i].date.split('-').reverse().join('-').slice(0, 8))
-                this.database.cases.push(parseInt(Object.values(database.data)[i].cases) - temp)
-                temp = parseInt(Object.values(database.data)[i].cases)
+            for (let i=days; i<days+7; i++){
+                let casesCal = parseInt((-0.02*(i**3)) + (9.78*(i**2)) + (-1015*(i)) + (13971.08))
+                this.database.cases.push(casesCal)
+                this.database.label.push(i+ ' Days')
+
             }
             this.greenLineChart.chartData = {
                 labels: this.database.label,
@@ -216,7 +221,7 @@ export default {
                 }]
             }
             const today = new Date()
-            this.dateToday = `${first} - ${last}`
+            this.dateToday = `y = β<sub>0</sub>+β<sub>1</sub>x+β<sub>2</sub>x<sup>2</sup>+β<sub>3</sub>x<sup>3</sup>`}
         },
         async run() {
             const database = await axios({
@@ -224,6 +229,7 @@ export default {
                 method: 'get'
             })
             //
+            this.data = Object.values(database.data)[0].length
             const stateName = []
             const totalLabel = []
             const totalCases = []
@@ -262,7 +268,7 @@ export default {
             const lengthD = database.data.cases_time_series.length
             for (let i = 0; i < lengthD; i += 8) {
                 this.database.cases.push(parseInt(Object.values(database.data)[0][i].dailyconfirmed))
-                this.database.label.push(Object.values(database.data)[0][i].date.slice(0, 6))
+                this.database.label.push(i+" Days")
             }
             this.database.totalCases = parseInt(Object.values(database.data)[0][Object.values(database.data)[0].length - 1].totalconfirmed)
             //
