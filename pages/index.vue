@@ -8,7 +8,7 @@
                     <div class="col-sm-6" :class="isRTL ? 'text-right' : 'text-left'">
                         <h5 class="card-category">Timeline of Covid-19 in India</h5>
                         <h3 class="card-title">
-                            <i class="tim-icons icon-bell-55 text-primary "></i> {{totalCases}} Lakhs
+                            <i class="tim-icons icon-bell-55 text-primary "></i> {{totalCases}} Million
                         </h3>
                     </div>
                     <div class="col-sm-6 d-flex d-sm-block">
@@ -98,7 +98,7 @@
         <template slot="header">
             <h5 class="card-category">Timeline of samples tested in India</h5>
             <h3 class="card-title">
-                <i class="tim-icons icon-bell-55 text-primary "></i> {{database.tested}} Crores
+                <i class="tim-icons icon-bell-55 text-primary "></i> {{database.tested}} Million
             </h3>
         </template>
         <div class="chart-area">
@@ -346,7 +346,7 @@ export default {
                 testData2.push(parseInt(Object.values(database.data)[2][i].testspermillion))
                 testDataDate2.push(Object.values(database.data)[2][i].testedasof)
             }
-            this.database.tested = parseInt(Object.values(database.data)[2][length2 - 1].totalsamplestested / 1000000)
+            this.database.tested = parseInt(Object.values(database.data)[2][length2 - 1].totalsamplestested / 10000000)
             database2.push(parseInt(Object.values(database.data)[0][lengthD - 1].totalconfirmed))
             database3.push(parseInt(Object.values(database.data)[0][lengthD - 1].totalrecovered))
             database4.push(parseInt(Object.values(database.data)[0][lengthD - 1].totaldeceased))
@@ -428,7 +428,10 @@ export default {
             this.bigLineChart.chartData = chartData;
             this.bigLineChart.activeIndex = index;
             if (bigChartData[index]) {
-                this.totalCases = parseInt(bigChartData[index][bigChartData[index].length - 1] / 100000)
+                this.totalCases = parseInt(bigChartData[index][bigChartData[index].length - 1] / 1000000)
+                if(this.totalCases == 0){
+                    this.totalCases = bigChartData[index][bigChartData[index].length - 1] / 1000000
+                }
             }
         }
     },
